@@ -2,7 +2,7 @@
 
 import hashlib
 
-class Cracker():
+class Cracker:
     def __init__(self, string):
         self.string         = string
         self.md5hash        = hashlib.md5(self.string.encode('utf-8')).hexdigest()
